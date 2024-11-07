@@ -30,3 +30,5 @@ jobs:
         run: |
           mvn compile
           mvn exec:java -Dexec.mainClass="cloud.ohiyou.Main"
+      - name: keep alive
+        uses: gautamkrishnar/keepalive-workflow@v2 # using the workflow with default settings
