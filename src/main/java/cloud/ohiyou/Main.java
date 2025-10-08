@@ -146,7 +146,8 @@ public class Main {
     private static SignResultVO sendSignInRequest(String cookie) {
         // 获取签到页面
         String signPageCode = getSignPage(cookie);
-        String sign = getSign(signPageCode);
+//        String sign = getSign(signPageCode);
+        String sign = "";
         String userName = getUserName(signPageCode);
         // 获取加密参数
 //        String dynamicKey = HiFiNiEncryptUtil.generateDynamicKey();
